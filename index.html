@@ -5,12 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Odin Project - Sign Up Form</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div>
       <div class="one-third-width">
         <img src="" alt="" class="bg-image" />
-        <div class="transparent-heading">SIGN-UP FORM</div>
+        <div class="transparent-heading">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="75"
+            height="75"
+            viewBox="0 0 16 16"
+            stroke="#FFFFFF"
+            stroke-width="1"
+          >
+            <line x1="4" y1="14" x2="4" y2="4"></line>
+            <line x1="4" y1="4" x2="3" y2="1"></line>
+            <line x1="4" y1="4" x2="4" y2="1"></line>
+            <line x1="4" y1="4" x2="5" y2="1"></line>
+            <line x1="12" y1="1" x2="12" y2="14"></line>
+            <circle cx="12" cy="3" r="2"></circle>
+          </svg>
+
+          <h2>SIGN-UP FORM</h2>
+        </div>
       </div>
       <div class="two-third-width">
         <div class="message">
@@ -22,9 +41,77 @@
           <p>You <i>know</i> you want to.</p>
         </div>
         <form action="" class="form-input">
-          <fieldset></fieldset>
-          <div><input type="text" class="submit" /></div>
+          <fieldset>
+            <div class="form-group">
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                required
+                placeholder=" "
+              />
+              <label for="first-name">First Name:</label>
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                required
+                placeholder=" "
+              />
+              <label for="last-name">Last Name:</label>
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder=" "
+              />
+              <label for="email">Email:</label>
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                id="phone-number"
+                name="phone-number"
+                placeholder=" "
+              />
+              <label for="phone-number">Phone Number:</label>
+            </div>
+            <div class="form-group">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                placeholder=" "
+              />
+              <label for="password">Password:</label>
+            </div>
+            <div class="form-group">
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                required
+                placeholder=" "
+              />
+              <label for="confirm-password">Confirm Password:</label>
+            </div>
+          </fieldset>
+          <div><input type="submit" value="Submit" /></div>
+          <p class="log-in">
+            Already have an account? <a href="#">LOG IN HERE</a>
+          </p>
         </form>
+      </div>
+    </div>
+    <div id="success-popup" class="hidden">
+      <div class="popup-content">
+        <p>Form submitted successfully! Page will refresh when you click off</p>
       </div>
     </div>
   </body>
