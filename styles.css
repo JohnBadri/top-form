@@ -49,7 +49,7 @@ a,
 
 .one-third-width {
   width: var(--one-third);
-  background-image: url("/images/nut-recipe.jpg");
+  background-image: url("images/nut-recipe.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
