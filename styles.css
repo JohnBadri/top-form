@@ -51,9 +51,9 @@ a,
   width: var(--one-third);
   background-image: url("/images/nut-recipe.jpg");
   height: 100vh;
-  background-size: cover; /* Cover the entire container */
-  background-position: center; /* Center the background image */
-  height: 100vh; /* Full viewport height */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   position: relative;
 }
 
